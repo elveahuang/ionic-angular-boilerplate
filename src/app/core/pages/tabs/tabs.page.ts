@@ -1,14 +1,13 @@
 import { CoreModule } from '@/app/core/core.module';
 import { CoreService } from '@/app/core/services/core.service';
 import { Component, EnvironmentInjector } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 import { addIcons } from 'ionicons';
 import { ellipse, square, triangle } from 'ionicons/icons';
 
 @Component({
     selector: 'app-tabs',
     standalone: true,
-    imports: [CoreModule, RouterOutlet],
+    imports: [CoreModule],
     templateUrl: './tabs.page.html',
     styleUrls: ['./tabs.page.scss'],
 })
